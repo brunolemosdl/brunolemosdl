@@ -31,7 +31,7 @@ I build software for a living and research how machines can make games.
 <td width="50%"><a href="https://brunolemosdl.github.io/quadruped-rl-genesis/"><img src="assets/card-quadruped-rl-genesis.svg" alt="Quadruped RL in Genesis, CROS 2026" width="100%"></a></td>
 </tr>
 <tr>
-<td width="50%"><a href="https://doi.org/10.1109/SBR/WRE66973.2025.11249603"><img src="assets/card-visual-servoing.svg" alt="Visual servoing platform, SBR 2025" width="100%"></a></td>
+<td width="50%"><a href="https://sol.sbc.org.br/index.php/wesaac/article/view/45243/45004"><img src="assets/card-research-gaps.svg" alt="Research gap detection, WESAAC 2026" width="100%"></a></td>
 <td width="50%"><a href="https://tenebrisforge.com.br/"><img src="assets/card-tenebris-forge.svg" alt="Tenebris Forge" width="100%"></a></td>
 </tr>
 </table>
