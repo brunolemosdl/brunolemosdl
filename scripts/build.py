@@ -52,7 +52,7 @@ def banner():
         f'<polygon points="{hexagon(0, 0, 108)}" fill="none" stroke="{GLOW}" stroke-opacity=".25" stroke-width="2">'
         f'<animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="60s" repeatCount="indefinite"/></polygon>'
         f'</g>' + inline_mark("../brand/mark.svg", 985, 160, 176))
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="Bruno Lemos de Lima">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="Bruno Lemos">
 <defs>
 <radialGradient id="g1" cx="20%" cy="0%" r="70%"><stop offset="0" stop-color="{VIOLET}" stop-opacity=".45"/><stop offset="1" stop-color="{VIOLET}" stop-opacity="0"/></radialGradient>
 <radialGradient id="g2" cx="82%" cy="50%" r="35%"><stop offset="0" stop-color="{EMBER}" stop-opacity=".25"/><stop offset="1" stop-color="{EMBER}" stop-opacity="0"/></radialGradient>
@@ -66,7 +66,7 @@ def banner():
 {"".join(grid)}
 {sparks(28, w, h, 7)}
 {core}
-<text x="64" y="128" font-family="{FONT}" font-size="58" font-weight="700" fill="url(#t)" letter-spacing="-1">Bruno Lemos de Lima</text>
+<text x="64" y="128" font-family="{FONT}" font-size="58" font-weight="700" fill="url(#t)" letter-spacing="-1">Bruno Lemos</text>
 <text x="66" y="176" font-family="{FONT}" font-size="24" fill="{MUTED}">Software Engineer · Game AI &amp; reinforcement learning researcher</text>
 <g font-family="{FONT}" font-size="17" font-weight="600">
 <rect x="64" y="212" width="196" height="36" rx="18" fill="{VIOLET}" fill-opacity=".18" stroke="{VIOLET}" stroke-opacity=".5"/>

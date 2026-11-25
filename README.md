@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Bruno Lemos de Lima: Software Engineer, game AI and reinforcement learning researcher" width="100%">
+  <img src="assets/banner.svg" alt="Bruno Lemos: Software Engineer, game AI and reinforcement learning researcher" width="100%">
 </p>
 
 <p align="center">
