@@ -41,7 +41,7 @@ I build software for a living and research how machines can make games.
 |---|---|---|---|
 | 2026 | AIIDE | Did You Get the Level You Asked For? Bridging LLMs and PCGRL for Mario Level Generation | [paper](https://doi.org/10.1609/aiide.v22i1.43587) · [code](https://github.com/brunolemosdl/intent-pcgrl) · [demo](https://brunolemosdl.github.io/intent-pcgrl-demo/) |
 | 2026 | CROS | Deep Reinforcement Learning for Quadruped Locomotion in Genesis: A Comparative Study of PPO, SAC, and TD3 in Irregular Terrains | [paper](https://doi.org/10.1109/CROS69211.2026.11565703) · [code](https://github.com/brunolemosdl/quadruped-rl-genesis) · [page](https://brunolemosdl.github.io/quadruped-rl-genesis/) |
-| 2026 | WESAAC | A Multi-Agent System for Detection and Prioritization of Research Gaps in Scientific Literature | [paper](https://sol.sbc.org.br/index.php/wesaac/article/view/45243/45004) · [code](https://github.com/Raksantos/research-gap-detection) · [front end](https://github.com/Raksantos/research-gap-detection-front) |
+| 2026 | WESAAC | A Multi-Agent System for Detection and Prioritization of Research Gaps in Scientific Literature | [paper](https://sol.sbc.org.br/index.php/wesaac/article/view/45243/45004) · [code](https://github.com/Raksantos/research-gap-detection) · [code](https://github.com/Raksantos/research-gap-detection-front) |
 | 2025 | SBR | A Comprehensive Simulation Platform for Image-Based Visual Servoing: Unity 3D and ROS 2 Integration with Performance Analysis | [paper](https://doi.org/10.1109/SBR/WRE66973.2025.11249603) |
 
 Earlier work on gamification analytics for teachers (AIED 2020, SBIE 2020, ITS 2021, Education
