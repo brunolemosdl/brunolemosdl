@@ -97,7 +97,19 @@ def wrap(text, width):
     return lines + [line]
 
 
-def card(title, badge, color, text, tags):
+def inline_mark(path, cx, cy, size):
+    """Another SVG's drawing scaled into a card, its defs kept (ids are unique per mark)."""
+    import re
+    src = (OUT / path).read_text()
+    defs = re.search(r"<defs>(.*?)</defs>", src, re.S)
+    body = src.split("</defs>", 1)[1] if defs else re.sub(r"^<svg[^>]*>|<title.*?</title>", "", src)
+    body = body.rsplit("</svg>", 1)[0]
+    s = size / 256
+    return (f'<defs>{defs.group(1)}</defs>' if defs else "") + \
+        f'<g transform="translate({cx - size / 2:.1f} {cy - size / 2:.1f}) scale({s:.4f})">{body}</g>'
+
+
+def card(title, badge, color, text, tags, mark=None):
     w, h = 560, 200
     body = "".join(f'<text x="28" y="{96 + i * 22}" font-family="{FONT}" font-size="15" fill="{MUTED}">{escape(l)}</text>'
                    for i, l in enumerate(wrap(text, 64)[:3]))
@@ -112,7 +124,7 @@ def card(title, badge, color, text, tags):
 <defs><radialGradient id="g" cx="100%" cy="0%" r="80%"><stop offset="0" stop-color="{color}" stop-opacity=".22"/><stop offset="1" stop-color="{color}" stop-opacity="0"/></radialGradient></defs>
 <rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="16" fill="{CARD}" stroke="{BORDER}"/>
 <rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="16" fill="url(#g)"/>
-<polygon points="{hexagon(42, 46, 16)}" fill="{color}" fill-opacity=".2" stroke="{color}" stroke-width="2"/>
+{inline_mark(mark, 44, 46, 44) if mark else f'<polygon points="{hexagon(42, 46, 16)}" fill="{color}" fill-opacity=".2" stroke="{color}" stroke-width="2"/>'}
 <text x="70" y="53" font-family="{FONT}" font-size="22" font-weight="700" fill="{FG}">{escape(title)}</text>
 <rect x="{w - 28 - bw}" y="30" width="{bw}" height="26" rx="13" fill="{color}" fill-opacity=".18" stroke="{color}" stroke-opacity=".6"/>
 <text x="{w - 28 - bw / 2}" y="48" text-anchor="middle" font-family="{FONT}" font-size="13" font-weight="700" fill="{color}">{escape(badge)}</text>
@@ -131,9 +143,9 @@ CARDS = {
     "card-visual-servoing": ("Visual servoing platform", "SBR 2025", VIOLET,
                              "A simulation platform joining Unity 3D and ROS 2 to study image-based visual servoing, with a performance analysis.",
                              ["ROS 2", "Unity", "Robotics"]),
-    "card-tenebris-forge": ("Tenebris Forge", "Studio", EMBER2,
+    "card-tenebris-forge": ("Tenebris Forge", "Studio", GLOW,
                             "An independent studio crafting horror experiences: online games, web apps and tools forged in darkness.",
-                            ["Games", "Web", "Next.js"]),
+                            ["Games", "Web", "Next.js"], "tenebris-forge-mark.svg"),
 }
 
 if __name__ == "__main__":
