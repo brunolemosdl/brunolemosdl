@@ -49,14 +49,9 @@ def banner():
             grid.append(f'<polygon points="{hexagon(cx, cy, 28)}" fill="none" stroke="{VIOLET}" stroke-opacity="0.07"/>')
     core = (
         f'<g transform="translate(985 160)">'
-        f'<polygon points="{hexagon(0, 0, 92)}" fill="none" stroke="{GLOW}" stroke-opacity="0.45" stroke-width="3">'
+        f'<polygon points="{hexagon(0, 0, 108)}" fill="none" stroke="{GLOW}" stroke-opacity=".25" stroke-width="2">'
         f'<animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="60s" repeatCount="indefinite"/></polygon>'
-        f'<polygon points="{hexagon(0, 0, 66)}" fill="#1b1e24"/>'
-        f'<polygon points="{hexagon(0, 0, 54)}" fill="{EMBER2}"/>'
-        f'<polygon points="{hexagon(0, 0, 42)}" fill="{EMBER}">'
-        f'<animate attributeName="opacity" values="1;0.75;1" dur="3s" repeatCount="indefinite"/></polygon>'
-        f'<path d="M0 -28 C20 -6 23 12 15 24 C10 32 -12 32 -16 24 C-22 12 -13 0 -6 -6 C-4 3 1 8 4 6 C6 -4 3 -16 0 -28Z" fill="#1b1e24"/>'
-        f'</g>')
+        f'</g>' + inline_mark("../brand/mark.svg", 985, 160, 176))
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="Bruno Lemos de Lima">
 <defs>
 <radialGradient id="g1" cx="20%" cy="0%" r="70%"><stop offset="0" stop-color="{VIOLET}" stop-opacity=".45"/><stop offset="1" stop-color="{VIOLET}" stop-opacity="0"/></radialGradient>
