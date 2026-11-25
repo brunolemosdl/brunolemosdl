@@ -3,10 +3,11 @@
 </p>
 
 <p align="center">
+  <a href="https://bruno.legimus.io"><img src="https://img.shields.io/badge/bruno.legimus.io-site-fb8e31?style=for-the-badge&labelColor=1d1228" alt="Personal site"></a>
   <a href="https://www.linkedin.com/in/brunolemosdl/"><img src="https://img.shields.io/badge/LinkedIn-brunolemosdl-9b3df0?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=1d1228" alt="LinkedIn"></a>
   <a href="https://scholar.google.com/citations?user=h1Uk1bYAAAAJ"><img src="https://img.shields.io/badge/Scholar-8_papers-e84fc0?style=for-the-badge&logo=googlescholar&logoColor=white&labelColor=1d1228" alt="Google Scholar"></a>
   <a href="https://orcid.org/0009-0000-7906-1751"><img src="https://img.shields.io/badge/ORCID-0009--0000--7906--1751-fb8e31?style=for-the-badge&logo=orcid&logoColor=white&labelColor=1d1228" alt="ORCID"></a>
-  <a href="https://github.com/tenebris-forge"><img src="https://img.shields.io/badge/Tenebris_Forge-studio-e95904?style=for-the-badge&logo=github&logoColor=white&labelColor=1d1228" alt="Tenebris Forge"></a>
+  <a href="https://tenebrisforge.com.br/"><img src="https://img.shields.io/badge/Tenebris_Forge-studio-e95904?style=for-the-badge&labelColor=1d1228" alt="Tenebris Forge"></a>
 </p>
 
 ## About
@@ -17,7 +18,7 @@ I build software for a living and research how machines can make games.
 - **MSc student in Computer Science at UFMG**, advised by Luiz Chaimowicz: my dissertation turns
   a request written in plain language into a contract that a reinforcement learning agent
   satisfies while it builds a game level.
-- **Founder of [Tenebris Forge](https://github.com/tenebris-forge)**, an independent studio for
+- **Founder of [Tenebris Forge](https://tenebrisforge.com.br/)**, an independent studio for
   horror games, web apps and tools.
 - Computer engineer from UFAL, where I spent years in research labs working on gamification
   analytics, robotics in simulation and educational software.
@@ -31,7 +32,7 @@ I build software for a living and research how machines can make games.
 </tr>
 <tr>
 <td width="50%"><a href="https://doi.org/10.1109/SBR/WRE66973.2025.11249603"><img src="assets/card-visual-servoing.svg" alt="Visual servoing platform, SBR 2025" width="100%"></a></td>
-<td width="50%"><a href="https://github.com/tenebris-forge"><img src="assets/card-tenebris-forge.svg" alt="Tenebris Forge" width="100%"></a></td>
+<td width="50%"><a href="https://tenebrisforge.com.br/"><img src="assets/card-tenebris-forge.svg" alt="Tenebris Forge" width="100%"></a></td>
 </tr>
 </table>
 
